@@ -1,2 +1,2 @@
 # Yocto-RPi-Tiva
-##Building the Yocto Project on a separate host machine:
+## Building the Yocto Project on a separate host machine:
