@@ -13,4 +13,7 @@ Using a Virtual Machine running Ubuntu 18.04 LTS
   * Edit machine to match your target device, in this case `MACHINE ??= "raspberrypi3"`
 * Comment/disable the PACKAGECONFIG's under Qemu configuration
 * Under the row CONF_VERSION = "1" add the row `GPU_MEM = "16"`
-* Now 
+* Now we are ready to launch a build, execute `bitbake rpi-basic-image`
+  * This will build a small image of an embedded GNU Linux distribution for Raspberry Pi3, this can take a long time depending on the hardware of the host machine.
+
+ 
