@@ -1,1 +1,1 @@
-Test.
+--Building the Yocto Project on a separate host machine:
