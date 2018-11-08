@@ -11,4 +11,6 @@ Using a Virtual Machine running Ubuntu 18.04 LTS
   * add the row `/home/usrname/poky/meta-raspberrypi \` to bblayers.conf
 * Edit the configuration file local.conf: `vim/nano conf/local.conf`
   * Edit machine to match your target device, in this case `MACHINE ??= "raspberrypi3"`
- 
+* Comment/disable the PACKAGECONFIG's under Qemu configuration
+* Under the row CONF_VERSION = "1" add the row `GPU_MEM = "16"`
+* Now 
