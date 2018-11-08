@@ -5,4 +5,6 @@ Building a custom Linux distribution to a target specific task can be done with 
 Using a Virtual Machine running Ubuntu 18.04 LTS
 * Clone the poky reposityory: `git clone -b sumo git://git.yoctoproject.org/poky`
 * `cd poky`
-* Clone BSP meta-layer for Raspberry Pi: `git clone git://git.yoctoproject,org/meta-raspberrypi`
+* Clone BSP meta-layer for Raspberry Pi: `git clone git://git.yoctoproject.org/meta-raspberrypi`
+* Initialize build-environment: `source oe-init-build-env`
+* Edit the configuration file bblayers.conf: `vim/nano conf/bblayers.conf`
