@@ -8,3 +8,5 @@ Using a Virtual Machine running Ubuntu 18.04 LTS
 * Clone BSP meta-layer for Raspberry Pi: `git clone git://git.yoctoproject.org/meta-raspberrypi`
 * Initialize build-environment: `source oe-init-build-env`
 * Edit the configuration file bblayers.conf: `vim/nano conf/bblayers.conf`
+  * add the row `/home/usrname/poky/meta-raspberrypi \` to bblaters.conf
+* Then
