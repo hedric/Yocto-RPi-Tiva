@@ -13,7 +13,14 @@ Using a Virtual Machine running Ubuntu 18.04 LTS
   * Edit machine to match your target device, in this case `MACHINE ??= "raspberrypi3"`
 * Comment/disable the PACKAGECONFIG's under Qemu configuration
 * Under the row CONF_VERSION = "1" add the row `GPU_MEM = "16"`
+
+* In order to get rid of a networking error due to not being able to access https://www.example.com while trying to bitbake the image, the following changes needed to be made to poky/meta-poky/conf/distro/poky.conf (it does obviously not have to be google)
+
+`# The CONNECTIVITY_CHECK_URI's are used to test whether we can succesfully
+# fetch from the network (and warn you if not). To disable the test set
+# the variable to be empty.
+# Git example url: git://git.yoctoproject.org/yocto-firewall-test;protocol=git;rev=master    
+CONNECTIVITY_CHECK_URIS ?= "https://www.google.com/"`
+
 * Now we are ready to launch a build, execute `bitbake rpi-basic-image`
   * This will build a small image of an embedded GNU Linux distribution for Raspberry Pi3, this can take a long time depending on the hardware of the host machine.
-
- 
