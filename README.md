@@ -33,3 +33,4 @@ sudo dd if=Dropbox/rpi-basic-image-raspberrypi3.rpi-sdimg of=/dev/disk2 bs=1m
 sync
 sudo diskutil umountDisk /dev/disk2
 ~~~~
+* To check the disk name of the SD card one can use `diskutil list`
