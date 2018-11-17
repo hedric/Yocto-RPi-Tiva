@@ -26,3 +26,10 @@ CONNECTIVITY_CHECK_URIS ?= "https://www.google.com/"
 
 * Now we are ready to launch a build, execute `bitbake rpi-basic-image`
   * This will build a small image of an embedded GNU Linux distribution for Raspberry Pi3, this can take a long time depending on the hardware of the host machine.
+* The SD-card slot on my Dell PC did not `dd` the image properly so i had to use my MacBook Air
+~~~~
+sudo diskutil umountDisk /dev/disk2
+sudo dd if=Dropbox/rpi-basic-image-raspberrypi3.rpi-sdimg of=/dev/disk2 bs=1m
+sync
+sudo diskutil umountDisk /dev/disk2
+~~~~
