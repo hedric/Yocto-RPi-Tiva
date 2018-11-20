@@ -34,3 +34,7 @@ sync
 sudo diskutil umountDisk /dev/disk2
 ~~~~
 * To check the disk name of the SD card one can use `diskutil list`
+
+
+* For the kernel to talk to external hardware it needs a driver which is represented by a kernel module. And that kernel module needs to exist on the system and it needs to be loaded up to the kernel so that you can use that piece of hardware. The available modules are located in
+`/lib/modules/kernel/kernel-version/`
