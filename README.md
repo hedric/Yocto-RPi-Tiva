@@ -38,3 +38,4 @@ sudo diskutil umountDisk /dev/disk2
 
 * For the kernel to talk to external hardware it needs a driver which is represented by a kernel module. And that kernel module needs to exist on the system and it needs to be loaded up to the kernel so that you can use that piece of hardware. The available modules are located in
 `/lib/modules/kernel/kernel-version/`
+https://raspberrypi.stackexchange.com/questions/31842/how-do-i-generate-configure-config-txt-for-raspberry-pi2-using-yocto?rq=1
